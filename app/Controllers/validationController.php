@@ -7,9 +7,6 @@
         if($firstname === '') {
             echo 'Bitte geben Sie Ihren Vornamen ein.';
         }
-        else{
-            echo 'Thanks';
-        }
 
         $lastname = $_POST['lastname'] ?? '';
         $lastname = trim($lastname);
@@ -19,15 +16,17 @@
 
         $Email = $_POST['Email'] ?? '';
         $Email = trim($Email);
-        if(filter_var($Email, FILTER_VALIDATE_EMAIL === false)) {
-            echo 'Bitte geben Sie eine gültige E-Mail Adresse ein.';
+        if(empty($Email) || !preg_match("/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9.-]+.[a-zA-Z0-9]$/", $Email) === true){
+            echo "Email ist nicht gültig";
         }
 
 
-        $Phonenumber = $_POST['P'] ?? '';
+        $Phonenumber = $_POST['Phonenumber'] ?? '';
         $Phonenumber = trim($Phonenumber);
-        if($Phonenumber === '') {
-            echo 'Bitte geben Sie Ihren Nachnamen ein.';
+        if(empty($Phonenumber) || !preg_match("/^[0-9\s+-\/]+$/", $Phonenumber)===true){
+            echo "Telefonnummer ist nicht gültig";
         }
+
+
     }
 ?>
