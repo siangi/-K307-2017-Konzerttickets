@@ -9,20 +9,20 @@
 
 <h1 class="welcome">Kaufformular</h1>
 
-<form action="app/Controllers/validationController.php" method="post">
+<form action="validation" method="post">
 
     <fieldset>
 
         <legend>Kontaktinformationen</legend>
 
         <label for="firstname">Vorname</label>
-        <input type="text" id="firstname">
+        <input type="text" id="firstname" name="firstname">
 
         <label for="lastname">Nachname</label>
         <input type="text" id="lastname"></br>
 
-        <label for="Adress">Adresse</label>
-        <input type="text" id="Adress">
+        <label for="Email">Email</label>
+        <input type="text" id="Email">
 
         <label for="Phonenumber">Telefonnummer</label>
         <input type="text" id="Phonenumber">
