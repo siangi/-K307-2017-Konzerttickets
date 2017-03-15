@@ -15,11 +15,8 @@
 
         <legend>Kontaktinformationen</legend>
 
-        <label for="firstname">Vorname</label>
-        <input type="text" id="firstname" name="firstname">
-
-        <label for="lastname">Nachname</label>
-        <input type="text" id="lastname" name="lastname"></br>
+        <label for="firstname">Vor- und Nachname</label>
+        <input type="text" id="firstAndLastName" name="firstAndLastName">
 
         <label for="Email">Email</label>
         <input type="text" id="Email" name="Email">
@@ -44,15 +41,14 @@
         </select>
 
         <label for="Treuebonus">Treuebonus</label>
-        <input type="text" id="Treuebonus"></br>
-
-        <label for="PriceWOBonus">Preis ohne Treuebonus</label>
         <select>
             <option value="1">0% Rabatt</option>
             <option value="2">5% Rabatt</option>
             <option value="3">10% Rabatt</option>
             <option value="3">15% Rabatt</option>
-        </select>
+        </select></br>
+
+
         <label for="Treuebonus">Preis Total</label>
 
     </fieldset>

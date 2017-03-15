@@ -1,17 +1,11 @@
 <?php
     if ($_SERVER['REQUEST_METHOD'] === "POST")
     {
-        $firstname = $_POST['firstname'] ?? '';
+        $firstname = $_POST['firstAndLastName'] ?? '';
         $firstname = trim($firstname);
 
         if($firstname === '') {
             echo 'Bitte geben Sie Ihren Vornamen ein.';
-        }
-
-        $lastname = $_POST['lastname'] ?? '';
-        $lastname = trim($lastname);
-        if($lastname === '') {
-            echo 'Bitte geben Sie Ihren Nachnamen ein.';
         }
 
         $Email = $_POST['Email'] ?? '';
